@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:cwmp="urn:dslforum-org:cwmp-1-0">
+	<SOAP-ENV:Header>
+		<cwmp:ID SOAP-ENV:mustUnderstand="1">0</cwmp:ID>
+	</SOAP-ENV:Header>
+	<SOAP-ENV:Body SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+		<cwmp:Inform>
+			<DeviceId>
+				<Manufacturer>TenGog</Manufacturer>
+				<OUI>ABCDEF</OUI>
+				<ProductClass>Thunder1000</ProductClass>
+				<SerialNumber>ABCD0028C7CE</SerialNumber>
+			</DeviceId>
+			<Event SOAP-ENC:arrayType="cwmp:EventStruct[2]">
+				<EventStruct>
+					<EventCode>1 BOOT</EventCode>
+					<CommandKey href="#_9"/>
+				</EventStruct>
+				<EventStruct>
+					<EventCode>4 VALUE CHANGE</EventCode>
+					<CommandKey href="#_9"/>
+				</EventStruct>
+			</Event>
+			<MaxEnvelopes>1</MaxEnvelopes>
+			<CurrentTime>2023-02-15T12:43:10+02:00</CurrentTime>
+			<RetryCount>0</RetryCount>
+			<ParameterList SOAP-ENC:arrayType="cwmp:ParameterValueStruct[7]">
+				<ParameterValueStruct>
+					<Name>Device.DeviceInfo.HardwareVersion</Name>
+					<Value xsi:type="xsd:string">3.00</Value>
+				</ParameterValueStruct>
+				<ParameterValueStruct>
+					<Name>Device.DeviceInfo.SoftwareVersion</Name>
+					<Value xsi:type="xsd:string">Thunder1000.0.1.0</Value>
+				</ParameterValueStruct>
+				<ParameterValueStruct>
+					<Name>Device.DeviceInfo.ProvisioningCode</Name>
+					<Value xsi:type="xsd:string"/>
+				</ParameterValueStruct>
+				<ParameterValueStruct>
+					<Name>Device.ManagementServer.ParameterKey</Name>
+					<Value xsi:type="xsd:string">14582759</Value>
+				</ParameterValueStruct>
+				<ParameterValueStruct>
+					<Name>Device.ManagementServer.ConnectionRequestURL</Name>
+					<Value xsi:type="xsd:string">http://172.16.66.40:7547/7b5d24eccc6a89f0e9c8e323f7c54188</Value>
+				</ParameterValueStruct>
+				<ParameterValueStruct>
+					<Name>Device.ManagementServer.AliasBasedAddressing</Name>
+					<Value xsi:type="xsd:boolean">true</Value>
+				</ParameterValueStruct>
+				<ParameterValueStruct>
+					<Name>Device.RootDataModelVersion</Name>
+					<Value xsi:type="xsd:string">2.0</Value>
+				</ParameterValueStruct>
+			</ParameterList>
+		</cwmp:Inform>
+		<id id="_9" xsi:type="cwmp:CommandKeyType"/>
+	</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

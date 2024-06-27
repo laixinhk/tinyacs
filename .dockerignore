@@ -1,0 +1,9 @@
+.git
+.gitee
+.gsoap_build_success
+.stamp_ssl_files_installed
+gsoap-2.8
+gsoap
+Dockerfile
+output
+README.md

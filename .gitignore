@@ -1,0 +1,92 @@
+.gitee
+reference_logs
+tags
+tmp
+wsdl2h
+stdsoap2.h
+stdsoap2.c
+soapcpp2
+config.h
+acs/tinyacs
+acs/soapcpp2_output/
+acs/wsdl2h_output/
+output
+rpc/*
+RECV.log
+TEST.log
+logs/
+gsoap-2.8
+libgsoap
+.stamp_gsoap_installed
+.stamp_ssl_files_installed
+cwmp.xsd
+ssl_client
+ssl_server
+ssl/gen/client_full.cfg
+ssl/gen/server_full.cfg
+network_trace
+gen
+cscope.*
+
+
+*.zip
+
+*.bk
+
+*.key
+*.pem
+*.csr
+*.srl
+
+# Prerequisites
+*.d
+
+# Object files
+*.o
+*.ko
+*.obj
+*.elf
+
+# Linker output
+*.ilk
+*.map
+*.exp
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Libraries
+*.lib
+*.a
+*.la
+*.lo
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# Kernel Module Compile Results
+*.mod*
+*.cmd
+.tmp_versions/
+modules.order
+Module.symvers
+Mkfile.old
+dkms.conf

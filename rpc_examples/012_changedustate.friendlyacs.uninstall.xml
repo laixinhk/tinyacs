@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:cwmp="urn:dslforum-org:cwmp-1-0" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SOAP-ENV:Header>
+    <cwmp:ID mustUnderstand="1">37972087</cwmp:ID>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+    <cwmp:ChangeDUState>
+      <Operations type="cwmp:UninstallOpStruct">
+        <UUID>c2520056-e53b-4821-9fa1-0e6346e1a688</UUID>
+        <Version>1.1</Version>
+        <ExecutionEnvRef>Device.SoftwareModules.ExecEnv.1.</ExecutionEnvRef>
+      </Operations>
+      <CommandKey>37972087</CommandKey>
+    </cwmp:ChangeDUState>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

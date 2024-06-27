@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope
+    xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:cwmp="urn:dslforum-org:cwmp-1-0">
+  <SOAP-ENV:Header>
+    <cwmp:ID SOAP-ENV:mustUnderstand="1">100</cwmp:ID>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+    <cwmp:SetParameterValues>
+      <ParameterList arrayType="cwmp:ParameterValueStruct[3]">
+        <ParameterValueStruct>
+          <Name>Device.IP.Diagnostics.UploadDiagnostics.DiagnosticsState</Name>
+          <Value xsi:type="xsd:string">Requested</Value>
+        </ParameterValueStruct>
+        <ParameterValueStruct>
+          <Name>Device.IP.Diagnostics.UploadDiagnostics.UploadURL</Name>
+          <Value xsi:type="xsd:string">http://172.16.61.46:81/uploads/900.txt</Value>
+        </ParameterValueStruct>
+        <ParameterValueStruct>
+          <Name>Device.IP.Diagnostics.UploadDiagnostics.TestFileLength</Name>
+          <Value xsi:type="xsd:unsignedInt">907375047</Value>
+        </ParameterValueStruct>
+      </ParameterList>
+      <ParameterKey>twoweekdebug</ParameterKey>
+    </cwmp:SetParameterValues>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope
+    xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:cwmp="urn:dslforum-org:cwmp-1-2">
+  <SOAP-ENV:Header>
+    <cwmp:ID SOAP-ENV:mustUnderstand="1">100</cwmp:ID>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+  <cwmp:ChangeDUState xmlns:cwmp="urn:dslforum-org:cwmp-1-2">
+    <Operations  xsi:type="cwmp:UninstallOpStruct">
+      <UUID>UUID------------UninstallOpStruct</UUID>
+      <Version>Version-------------UninstallOpStruct</Version>
+      <ExecutionEnvRef>ExecutionEnvRef----------UninstallOpStruct</ExecutionEnvRef>
+    </Operations>
+    <Operations  xsi:type="cwmp:InstallOpStruct">
+      <URL>http://www.google.com</URL>
+      <UUID>UUID----------------InstallOpStruct</UUID>
+      <Username>Username----------------InstallOpStruct</Username>
+      <Password>Password----------------InstallOpStruct</Password>
+      <ExecutionEnvRef>ExecutionEnvRef----------------InstallOpStruct</ExecutionEnvRef>
+    </Operations>
+    <CommandKey>EEECommandKeyEEE</CommandKey>
+  </cwmp:ChangeDUState>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

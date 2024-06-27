@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:cwmp="urn:dslforum-org:cwmp-1-0" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SOAP-ENV:Header>
+    <cwmp:ID mustUnderstand="1">37887844</cwmp:ID>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+    <cwmp:ChangeDUState>
+      <Operations type="cwmp:InstallOpStruct">
+        <URL>http://172.16.61.46:82/uploads/helloworld.tar.gz</URL>
+        <UUID />
+        <Username />
+        <Password />
+        <ExecutionEnvRef />
+      </Operations>
+      <CommandKey>37887844</CommandKey>
+    </cwmp:ChangeDUState>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

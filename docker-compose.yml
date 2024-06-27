@@ -1,0 +1,42 @@
+name: tinyacs
+services:
+  tinyacs_srv:
+    image: tinyacs_img
+    container_name: tinyacs
+    command:
+      - --debuglevel=notice                      #possible options: "error", "notice", "info", "debug".
+      - --loop=-1                               #Send only once by default(loop=0). -1 for infinite loop.
+      - --tracefile=/root/network_trace/soap_trace.log
+#if Enable HTTP authentication.:
+      - --auth
+      - --userid=twoweek
+      - --passwd=helloworld
+#endif
+#if Accept HTTPS connection instead of HTTP:
+      - --https
+      - --keyfile=ssl_server/KeyAndCA.pem
+      - --cacert=ssl_server/server_ca.pem
+#endif
+#if need help:
+#      - --help
+#endif
+    build:
+      context: .
+      dockerfile: ./tinyacs.dockerfile
+      args:
+        TINYACS_VERSION: v1.7.0
+        ACS_SERVER_DOMAIN_NAME: my.tinyacs.acs
+        http_proxy: http://a.proxy.net:8080
+        https_proxy: http://a.proxy.net:8080
+    volumes:
+      - ./rpc:/root/rpc
+      - ./network_trace:/root/network_trace
+    networks:
+      - my_network
+    ports:
+      - 10240:10240/tcp
+
+networks:
+  my_network:
+    name: my_tinyacs_brigde
+    driver: bridge

@@ -1,7 +1,7 @@
 # tinyacs
 
 #### Description
-Tiny ACS (Auto Configuration Server) is an open source TR-069(CPE WAN Management Protocol) test tool for developers.
+Tiny ACS (Auto Configuration Server) is an open source TR-069(CPE WAN Management Protocol) test tool for developers to debug the TR-069 protocol.
 
 #### License
 tinyacs is copyrighted by Laixin LIU in 2024.
